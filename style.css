@@ -154,8 +154,7 @@ li {
 }
 
 p {
-  opacity: 0;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 110px;
   margin-top: -20px;
 }
@@ -184,11 +183,12 @@ p {
   padding-left: 9px;
 }
 
-li:hover, p:hover {
+li:hover {
   margin-left: -200px;
   text-align: left;
-  opacity: 2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transform: translateX(-2.1rem);
+          transform: translateX(-2.1rem);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -147,11 +147,9 @@ li {
 }
 
 p {
-    opacity: 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 110px;
     margin-top: -20px;
-
 }
 
 .blog {
@@ -178,11 +176,11 @@ p {
     padding-left: 9px;
 }
 
-li:hover, p:hover {
+li:hover {
     margin-left: -200px;
     text-align: left;
-    opacity: 2;
-    transition: 0.5s;
+    transform: translateX(-2.1rem);
+    transition: 1s;
 }
 
 
