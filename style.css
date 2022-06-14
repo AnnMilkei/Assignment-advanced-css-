@@ -80,6 +80,7 @@ main {
   font-size: 30px;
   font-family: Arial;
   margin-top: 10%;
+  text-align: center;
 }
 
 .gallerycontainer {
@@ -155,7 +156,7 @@ li {
 
 p {
   font-size: 20px;
-  margin-left: 110px;
+  margin-left: 75px;
   margin-top: -20px;
 }
 
@@ -186,9 +187,9 @@ p {
 li:hover {
   margin-left: -200px;
   text-align: left;
-  -webkit-transform: translateX(-2.1rem);
-          transform: translateX(-2.1rem);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+          transition-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 /*# sourceMappingURL=style.css.map */
