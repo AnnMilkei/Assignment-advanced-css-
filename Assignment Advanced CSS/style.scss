@@ -1,0 +1,200 @@
+@import "variables.scss";
+
+
+body {
+    display: grid; 
+    background-color: $bg-color;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 75%;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 800px;
+    margin: auto;
+}
+
+.cardpicture {
+    border: 5px solid #fff;
+    border-radius: 100%;
+    margin: auto;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    left: -2%;
+    top: -100px;
+}
+
+.header {
+        border-radius: 40px 40px 0 0;
+        background-color: $footercolor;
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: 12%;
+        height: 80%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+
+    p {
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 25px;
+        padding-bottom: 50%;
+    }
+}
+
+.header:hover {
+    box-shadow: 10px 10px 5px $primary-color ;
+}
+
+.footer {
+    border-radius: 0 0 40px 40px;
+    background-color: $primary-color;
+    color: $footercolor;
+    height: 45%;
+    margin-top: -35%;
+    margin-left: 5%;
+    margin-right: 12%;
+    padding-top: 15%;
+}
+
+.footer:hover {
+    box-shadow: 10px 10px 5px $footercolor;
+}
+
+.naam {
+    font-size: 30px;
+    font-family: $tekstfont2;
+    margin-top: 10%;
+    text-align: center;
+    
+}
+
+.gallerycontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr)); 
+    grid-gap: 5px;
+
+
+    .pictures {
+        width: 100%;
+        height: auto;
+        line-height: 0;
+        border-radius: 50px;
+    }
+}
+
+.gridpicture {
+    position: relative;
+    margin: 10% 10%;
+  }
+   
+  .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(44, 99, 219, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  .button:hover {
+    opacity: 1;
+    background-color: rgba(11, 45, 117, 0.4);
+  }
+
+  .sticky {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 70%;
+    width: 3em;
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    bottom: 0px;
+  } 
+
+li {
+    height: 50px;
+    margin-top: 2px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 75px;
+    margin-top: -20px;
+}
+
+.blog {
+    background-color: #e17b77;
+}
+
+.facebook {
+    background-color: #3b5998;
+    padding-left: 10px;
+}
+
+.twitter {
+    background-color: #00aced;
+    padding-left: 10px;
+}
+
+.linkedin {
+    background-color: #007bb6;
+    padding-left: 10px;
+}
+
+.github {
+    background-color: #333;
+    padding-left: 9px;
+}
+
+li:hover {
+    color: $footercolor; 
+    margin-left: -200px;
+    text-decoration: underline;
+    text-align: left;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+}
+
+a:link {
+    color: $footercolor; 
+}
+
+a:visited {
+    color: $footercolor; 
+}
+
+a:hover {
+    color: $footercolor;
+}
+a, a:hover {
+    color: #fff;
+}
+
